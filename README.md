@@ -115,5 +115,6 @@ clusters:
     server: https://cluster-a.vrelevant.lab
   name: my-vcluster
 ```
+To deploy additional clusters, simply set $CLUSTER_NAME to a new value and repeat step 5 again. That's it! 
 
-That's it! If you combine this with the previous post, you can deploy secure vClusters in a near fully automated manner. The one manual task remaining is updating the kubeconfig file to remove the cert/key of the initial cluster admin and adding the OIDC config. It would be easy enough to write a simple job that runs in our host cluster, detects those kubeconfigs when they're created and modifies them for us. That said, I did open a feature request issue in the vCluster repo to addt this to the helm chart capability.
+If you combine this with my previous post, you can deploy secure vClusters in a near fully automated manner. The one manual task remaining is updating the kubeconfig file to remove the cert/key of the initial cluster admin and adding the OIDC config. It would be easy enough to write a simple job that runs in our host cluster, detects those kubeconfigs when they're created and modifies them for us. That said, I did open a feature request issue in the vCluster repo to addt this to the helm chart capability.
