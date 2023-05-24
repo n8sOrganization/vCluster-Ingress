@@ -1,7 +1,7 @@
 # vCluster kube-apiserver Ingress
 
 This follows from my blog post [located here](https://vrelevant.net/vcluster-with-automated-ingress-config/)
-1. Deploy NGINX
+1. Deploy NGINX ingress controller
 
 Refer to the NGINX docs for deployment options. The manifest below deploys to a K8s cluster that has a LoadBalancer service available.
 
